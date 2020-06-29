@@ -10,7 +10,7 @@ public class Task {
 		
 		System.out.println("Otvet: 3*3 + 4*4=25 "); 
 		
-		System.out.println("Primer: " +  (j*j + "+" + i*i) + " = " + k);
+		System.out.println("Primer: " +  (j + "*" + j + " + " + i*2 + "*" + i*2 + " = " + k*k));
 		
 	}
 }
