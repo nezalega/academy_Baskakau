@@ -34,9 +34,10 @@ public class Lesson_3_1 {
 		for (int i = 0; i < array.length; i++) {
 			if (array[i]<SrAr) {
 			System.out.println("Меньшее значение  " + array[i]);
+						
 			}
 		}
-		}
-	}
+		}}
+	
 		
 
