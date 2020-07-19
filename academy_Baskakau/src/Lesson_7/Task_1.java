@@ -1,5 +1,8 @@
 package Lesson_7;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 public class Task_1 {
 
 			 
@@ -13,5 +16,12 @@ public class Task_1 {
 	        String[] arr = text.split("[!,.:?]"); // второе решение
 	        System.out.println("Количество знаков препинания в тексте (2): " + arr.length);	        
 	        
+	        Pattern p = Pattern.compile ("[!,.:?]"); // третье решение
+	        Matcher m = p.matcher(text);
+	        int counter = 0;
+	        while (m.find()) {
+	        	counter++;
+	        }
+	        System.out.println("Количество знаков препинания в тексте (3): " + counter);
 	    }
 	}
