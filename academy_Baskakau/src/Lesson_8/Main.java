@@ -11,7 +11,7 @@ public class Main {
 		boxb.setItem(new B(25,35));
 		
 		
-		System.out.println(boxb);
+		System.out.println(boxb.getItem());
 	}
 	
 }

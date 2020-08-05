@@ -1,8 +1,13 @@
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class Lesson_7 {
+public class Task2 {
 
+	public static 
+	
+	Pattern p1 = Pattern.compile ("([0]?[1-9]|[1|2][0-9]|[3][0|1])/([0]?[1-9]|1[0-2])/\\d{4}");
+	Pattern p2 = Pattern.compile ("([0]?[1-9]|[1|2][0-9]|[3][0|1])-([0]?[1-9]|1[0-2])-\\d{4}");
+	
 	public static void main (String [] args) {
 		
 		String [] tests = {"12/05/1953", "00/00/0000", "13/12/2020", "13-05-1954"};
@@ -18,14 +23,12 @@ public class Lesson_7 {
 			
 			
 			if (m1.find()) {
-				System.out.println(m1.group(0));
-//			} else if (m2.find()) {
-//				System.out.println(m2.group(0));
-			}
+				System.out.println(m1.group(0));}
+
 			else {
 				System.out.println("False");
 			}
-			
+		}
 			for (String t2 : tests2) {
 				Matcher m2 = p2.matcher(t2);
 							
@@ -35,6 +38,16 @@ public class Lesson_7 {
 				else {
 					System.out.println("False2");
 	}
-	
-	
-}}}}
+	}}
+			public static boolean isValidDateString(String stringDate) {
+				
+				Matcher m1 = p1.matcher(stringDate);
+				if (m1.find());{
+					return true;
+				}
+				Matcher m2 = p2.matcher(stringDate);
+				if (m2.find());{
+					return true;
+			}
+
+}
